@@ -4,12 +4,12 @@ import MyImage from "./MyImage";
 import Header from "./Header";
 import Button from "./Button";
 
-export default function UpperContainer() {
+export default function UpperContainer(prop) {
   return (
     <div className="mx-auto">
       <MyImage />
-      <Header name="Flucia" />
-      <Position position="CEO" />
+      <Header name={prop.name} />
+      <Position position={prop.position} />
       <Button />
     </div>
   );

@@ -5,7 +5,7 @@ export default function LowerContainer() {
     <div className="bg-blue-100 py-1 text-sm text-bold px-4 text-gray-500 mt-1  rounded-md">
       <div className="flex  px-1  py-2  ">
         <svg
-          class="h-5 w-5 text-gray-900 mt-1"
+          className="h-5 w-5 text-gray-900 mt-1"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ export default function LowerContainer() {
       </div>
       <div className="flex  px-1  py-2  ">
         <svg
-          class="h-5 w-5 text-gray-900 "
+          className="h-5 w-5 text-gray-900 "
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -49,7 +49,7 @@ export default function LowerContainer() {
       </div>
       <div className="flex  px-1  py-2  ">
         <svg
-          class="h-5 w-5 text-gray-900"
+          className="h-5 w-5 text-gray-900"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
