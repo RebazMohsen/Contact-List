@@ -1,17 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Container from "./Components/Container";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import NavBar from "./Components/NavBar";
+import MyImage from "./Components/MyImage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="grid grid-cols-5 space-x-8 space-y-20 m-20   ">
-      <div className="  mx-auto  ">
-        <div className=" h-60 w-60    bg-blue-50 grid   content-center rounded-md       ">
-          <Container name="Rebaz" position="CEO & Founder" />
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="about" element={<MyImage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
